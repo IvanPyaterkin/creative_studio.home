@@ -12,6 +12,7 @@ Template Name: Афіші
 get_header(); ?>
 
 <main>
+	<?php the_post(); ?>
     <h1><?php the_title(); ?></h1>
     <div class="wrap">
         <ul class="slide">
