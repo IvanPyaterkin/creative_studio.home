@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Апр 10 2015 г., 00:23
+-- Время создания: Апр 10 2015 г., 00:44
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=441 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=448 ;
 
 --
 -- Дамп данных таблицы `wp_options`
@@ -284,7 +284,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=630 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=652 ;
 
 --
 -- Дамп данных таблицы `wp_postmeta`
@@ -689,7 +689,15 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (622, 179, '_thumbnail_id', '103'),
 (625, 181, '_edit_last', '1'),
 (626, 181, '_edit_lock', '1428614064:1'),
-(627, 181, '_thumbnail_id', '102');
+(627, 181, '_thumbnail_id', '102'),
+(630, 183, '_edit_last', '1'),
+(631, 183, '_edit_lock', '1428615256:1'),
+(636, 185, '_edit_last', '1'),
+(637, 185, '_edit_lock', '1428615328:1'),
+(640, 187, '_edit_last', '1'),
+(641, 187, '_edit_lock', '1428615405:1'),
+(646, 189, '_edit_last', '1'),
+(647, 189, '_edit_lock', '1428615749:1');
 
 -- --------------------------------------------------------
 
@@ -726,7 +734,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=183 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=191 ;
 
 --
 -- Дамп данных таблицы `wp_posts`
@@ -876,7 +884,16 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (179, 1, '2015-04-09 21:14:22', '2015-04-09 21:14:22', '', 'Афиша 2', '', 'publish', 'open', 'open', '', 'afisha-2', '', '', '2015-04-09 21:14:22', '2015-04-09 21:14:22', '', 0, 'http://creative_studio.home/?p=179', 0, 'post', '', 0),
 (180, 1, '2015-04-09 21:14:22', '2015-04-09 21:14:22', '', 'Афиша 2', '', 'inherit', 'open', 'open', '', '179-revision-v1', '', '', '2015-04-09 21:14:22', '2015-04-09 21:14:22', '', 179, 'http://creative_studio.home/179-revision-v1/', 0, 'revision', '', 0),
 (181, 1, '2015-04-09 21:15:02', '2015-04-09 21:15:02', '', 'Афиша 1', '', 'publish', 'open', 'open', '', 'afisha-1', '', '', '2015-04-09 21:15:02', '2015-04-09 21:15:02', '', 0, 'http://creative_studio.home/?p=181', 0, 'post', '', 0),
-(182, 1, '2015-04-09 21:15:02', '2015-04-09 21:15:02', '', 'Афиша 1', '', 'inherit', 'open', 'open', '', '181-revision-v1', '', '', '2015-04-09 21:15:02', '2015-04-09 21:15:02', '', 181, 'http://creative_studio.home/181-revision-v1/', 0, 'revision', '', 0);
+(182, 1, '2015-04-09 21:15:02', '2015-04-09 21:15:02', '', 'Афиша 1', '', 'inherit', 'open', 'open', '', '181-revision-v1', '', '', '2015-04-09 21:15:02', '2015-04-09 21:15:02', '', 181, 'http://creative_studio.home/181-revision-v1/', 0, 'revision', '', 0),
+(183, 1, '2015-01-20 21:35:37', '2015-01-20 21:35:37', 'Внаслідок введення карантину в школах, з 25 по 31 січня занять не буде. Про дні, на які будуть перенесені заняття для відпрацювання пропущених, буде повідомлено пізніше. ', 'З 25 по 31 січня всі заняття відміняються.', '', 'publish', 'open', 'open', '', 'z-25-po-31-sichnya-vsi-zanyattya-vidminyayutsya', '', '', '2015-04-09 21:36:13', '2015-04-09 21:36:13', '', 0, 'http://creative_studio.home/?p=183', 0, 'post', '', 0),
+(184, 1, '2015-04-09 21:35:37', '2015-04-09 21:35:37', 'Внаслідок введення карантину в школах, з 25 по 31 січня занять не буде. Про дні, на які будуть перенесені заняття для відпрацювання пропущених, буде повідомлено пізніше. ', 'З 25 по 31 січня всі заняття відміняються.', '', 'inherit', 'open', 'open', '', '183-revision-v1', '', '', '2015-04-09 21:35:37', '2015-04-09 21:35:37', '', 183, 'http://creative_studio.home/183-revision-v1/', 0, 'revision', '', 0),
+(185, 1, '2015-02-01 21:36:39', '2015-02-01 21:36:39', ' Нова студія раннього розвитку дітей почне працювати з 1 травня 2015 р. “Перші кроки” допоможуть малятам розширити світогляд, розвинути таланти та почати робити “перші кроки”у власне майбутнє. ', 'Нова студія “Перші кроки”', '', 'publish', 'open', 'open', '', 'nova-studiya-pershi-kroki', '', '', '2015-04-09 21:37:21', '2015-04-09 21:37:21', '', 0, 'http://creative_studio.home/?p=185', 0, 'post', '', 0),
+(186, 1, '2015-04-09 21:37:21', '2015-04-09 21:37:21', ' Нова студія раннього розвитку дітей почне працювати з 1 травня 2015 р. “Перші кроки” допоможуть малятам розширити світогляд, розвинути таланти та почати робити “перші кроки”у власне майбутнє. ', 'Нова студія “Перші кроки”', '', 'inherit', 'open', 'open', '', '185-revision-v1', '', '', '2015-04-09 21:37:21', '2015-04-09 21:37:21', '', 185, 'http://creative_studio.home/185-revision-v1/', 0, 'revision', '', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(187, 1, '2015-02-08 21:38:14', '2015-02-08 21:38:14', ' Святкування буде проходити в палаці “Дружби Народів” о 10:00 8 березня 2015 р. Запршуємо всіх бажаючих прийняти участь в організації концерту. ', 'Свято 8 Березня.', '', 'publish', 'open', 'open', '', 'svyato-8-bereznya', '', '', '2015-04-09 21:38:53', '2015-04-09 21:38:53', '', 0, 'http://creative_studio.home/?p=187', 0, 'post', '', 0),
+(188, 1, '2015-04-09 21:38:14', '2015-04-09 21:38:14', ' Святкування буде проходити в палаці “Дружби Народів” о 10:00 8 березня 2015 р. Запршуємо всіх бажаючих прийняти участь в організації концерту. ', 'Свято 8 Березня.', '', 'inherit', 'open', 'open', '', '187-revision-v1', '', '', '2015-04-09 21:38:14', '2015-04-09 21:38:14', '', 187, 'http://creative_studio.home/187-revision-v1/', 0, 'revision', '', 0),
+(189, 1, '2015-02-10 21:40:44', '2015-02-10 21:40:44', ' Заняття вокальної студії будуть проходити по вівторках о 18:00. ', 'Зміна розкладу студії.', '', 'publish', 'open', 'open', '', 'zmina-rozkladu-studi%d1%97', '', '', '2015-04-09 21:42:26', '2015-04-09 21:42:26', '', 0, 'http://creative_studio.home/?p=189', 0, 'post', '', 0),
+(190, 1, '2015-04-09 21:40:44', '2015-04-09 21:40:44', ' Заняття вокальної студії будуть проходити по вівторках о 18:00. ', 'Зміна розкладу студії.', '', 'inherit', 'open', 'open', '', '189-revision-v1', '', '', '2015-04-09 21:40:44', '2015-04-09 21:40:44', '', 189, 'http://creative_studio.home/189-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -976,7 +993,11 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (166, 2, 0),
 (177, 12, 0),
 (179, 12, 0),
-(181, 12, 0);
+(181, 12, 0),
+(183, 11, 0),
+(185, 11, 0),
+(187, 11, 0),
+(189, 11, 0);
 
 -- --------------------------------------------------------
 
@@ -1011,7 +1032,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (8, 8, 'post_tag', '', 0, 1),
 (9, 9, 'post_tag', '', 0, 1),
 (10, 10, 'post_tag', '', 0, 1),
-(11, 11, 'category', '', 0, 0),
+(11, 11, 'category', '', 0, 4),
 (12, 12, 'category', '', 0, 3),
 (13, 13, 'category', '', 0, 7);
 
