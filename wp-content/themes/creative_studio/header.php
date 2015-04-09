@@ -26,10 +26,21 @@
 <?php wp_head();?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php
+if(is_page(8)) $pageClass = 'studio';
+if(is_page(116)) $pageClass = 'proj';
+if(is_page(113)) $pageClass = 'about';
+if(is_page(14)) $pageClass = 'affiche';
+if(is_page(18)) $pageClass = 'conta';
+if(is_page(12)) $pageClass = 'new';
+if(is_page(16)) $pageClass = 'gal';
+//if(is_page()) $pageClass = '';
+?>
+
+<body<?php if($pageClass) echo ' class="'.$pageClass.'"'; ?>>
 <section class="header-wrap">
     <header class="fix">
-		<a class="logo" href="index.html">
+		<a class="logo" href="/">
             <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>">
 			<?php bloginfo('name'); ?>
         </a>

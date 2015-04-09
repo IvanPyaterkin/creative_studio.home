@@ -11,22 +11,22 @@ Template Name: Студії
  */
 get_header(); ?>
 
-<main class="studio">
-    <?php $title= get_the_title();
-    echo '<h1>'.$title.'</h1>';?>
+<main>
+	<h1><?php the_title(); ?></h1>
     <div class="wrap">
 		<ul class="studia">
-			 <?php
+			<?php
 				query_posts('cat=4');
 				if ( have_posts() ) :
 					while (have_posts()) : the_post();
 						?>
-            <li class="vocal">
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <li class="<?php the_field("class"); ?>">
+                
                 <figure>
                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(231,229)); ?></a>
                     <figcaption><h4><?php the_excerpt();?></h4></figcaption>
                 </figure>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             </li>
 			<?php endwhile;  // завершаем цикл.
             endif;
