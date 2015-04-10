@@ -36,7 +36,7 @@ Template Name: Главная
 							Lorem ipsum dolor sit amet consectetur a dipisicing elit sed.Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit, sed do eiusmod Incididunt abore et dolore magna aliqua. Ut enim ad minim veniam.
 						</p>
-						<a href="{ССЫЛКА НА СООТВЕТСТВУЮЩУЮ СТРАНИЦУ}">Детальніше</a>
+						<a href="<?php bloginfo(url); ?>/galereya/">Детальніше</a>
 					</li>
 					<li class="studios">
 						<figure>
@@ -47,7 +47,7 @@ Template Name: Главная
 							Lorem ipsum dolor sit amet consectetur a dipisicing elit sed.Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit, sed do eiusmod Incididunt abore et dolore magna aliqua. Ut enim ad minim veniam.
 						</p>
-						<a href="{ССЫЛКА НА СООТВЕТСТВУЮЩУЮ СТРАНИЦУ}">Детальніше</a>
+						<a href="<?php bloginfo(url); ?>/studiї/">Детальніше</a>
 					</li>
 					<li class="affiche">
 						<figure>
@@ -58,7 +58,7 @@ Template Name: Главная
 							Lorem ipsum dolor sit amet consectetur a dipisicing elit sed.Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit, sed do eiusmod Incididunt abore et dolore magna aliqua. Ut enim ad minim veniam.
 						</p>
-						<a href="{ССЫЛКА НА СООТВЕТСТВУЮЩУЮ СТРАНИЦУ}">Детальніше</a>
+						<a href="<?php bloginfo(url); ?>afishi/">Детальніше</a>
 					</li>
 				</ul>
 			</div>
