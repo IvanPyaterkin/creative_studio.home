@@ -58,7 +58,7 @@ Template Name: Главная
 							Lorem ipsum dolor sit amet consectetur a dipisicing elit sed.Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit, sed do eiusmod Incididunt abore et dolore magna aliqua. Ut enim ad minim veniam.
 						</p>
-						<a href="<?php bloginfo(url); ?>afishi/">Детальніше</a>
+						<a href="<?php bloginfo(url); ?>/afishi/">Детальніше</a>
 					</li>
 				</ul>
 			</div>
