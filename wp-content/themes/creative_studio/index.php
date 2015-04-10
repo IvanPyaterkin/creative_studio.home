@@ -8,6 +8,8 @@
 <?php get_header()?>
 <!-- header -->
 
+<main>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div class="box<?php if( $count%3 == 0 ) { echo '-1'; }; $count++; ?>">
@@ -23,5 +25,7 @@
 <?php endwhile; ?>
 <?php else : ?>
 <?php endif; ?>
+
+</main>
 <!--footer-->
 <?php get_footer();?>

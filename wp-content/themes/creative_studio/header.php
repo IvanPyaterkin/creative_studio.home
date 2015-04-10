@@ -27,6 +27,7 @@
 </head>
 
 <?php
+if(is_page(44)) $pageClass = 'index';
 if(is_page(8)) $pageClass = 'studio';
 if(is_page(116)) $pageClass = 'proj';
 if(is_page(113)) $pageClass = 'about';

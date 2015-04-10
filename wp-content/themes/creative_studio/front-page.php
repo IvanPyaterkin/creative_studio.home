@@ -1,4 +1,8 @@
 <?php
+
+/*
+Template Name: Главная
+*/
 /**
  * Created by PhpStorm.
  * User: rb
