@@ -10,7 +10,9 @@
 
 <main>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php if (have_posts()):
+		while (have_posts()):
+			the_post(); ?>
 
     <div class="box<?php if( $count%3 == 0 ) { echo '-1'; }; $count++; ?>">
         <li>
